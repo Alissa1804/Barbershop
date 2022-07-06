@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><img src="./images/Logo.svg" alt="логотип" width="69" height="55"
+          /></a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="#about">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#prices">Услуги и цены</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#team">Мастера</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu__button" type="button" data-modal-open>
+          <svg class="burger" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <a class="link nav__link header__phone" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="button header__button" type="button">
+          онлайн-запись
+        </button>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <div class="container mobile-menu__container">
+          <button data-modal-close class="modal__button" type="button">
+            <svg class="modal__button-icon" width="40" height="40">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#about">О нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#prices">Услуги и цены</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#team">Мастера</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <a class="link mobile-menu__phone" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="button button--dark" type="button">
+            онлайн-запись
+          </button>
+           <ul class="list mobile-menu__social-links">
+              <li class="mobile-menu-social__item">
+                <a class="link mobile-menu__social-link mobile-instagram" href="" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu-social__item mobile-youtube">
+                <a class="link mobile-menu__social-link" href="" lang="en"
+                  >Youtube</a
+                >
+              </li>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
