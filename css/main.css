@@ -112,12 +112,14 @@ button {
   left: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #212121;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__phone {
@@ -135,9 +137,13 @@ button {
   }
   .header__phone {
     display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    order: 2;
   }
   .header__button {
     display: inline-block;
+    order: 1;
   }
 }
 
@@ -145,6 +151,10 @@ button {
   .header__phone {
     margin-left: auto;
     margin-right: 40px;
+    order: 1;
+  }
+  .header__button {
+    order: 2;
   }
 }
 
